@@ -84,3 +84,10 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     font-size: 1rem !important;
     font-weight: normal !important;
 }
+
+.navbar-nav .nav-item {
+    color: #000 !important;
+    font-family: 'Georgia', serif !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+}
