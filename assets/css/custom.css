@@ -1,70 +1,28 @@
-body {
-    background: #fff;
-    color: #000;
-}
-
-h1, h2, h3, p, li, a, .statement-text {
-    color: #000;
-}
-
-.main-title {
-    text-align: center;
-    font-size: 4rem;
-    font-family: 'Georgia', serif;
-    margin-top: 40px;
-    margin-bottom: 0;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 2.2rem;
-    font-family: 'Georgia', serif;
-    margin-top: 16px;
-    margin-bottom: 20px;
-    font-weight: normal;
-}
-
-.statement-section {
-    margin: 0 auto 40px auto;
-    max-width: 900px;
-    text-align: center;
-}
-
-.statement-text {
-    font-size: 1.5rem;
-    line-height: 1.4;
-    font-family: 'Georgia', serif;
-    margin: 0;
-}
-
-/* Portfolio filter buttons - make them black with white text */
-#portfolio-filters ul {
-    display: flex;
-    gap: 18px;
-    padding-left: 0;
-}
-
-#portfolio-filters li {
-    list-style: none;
-}
-
 #portfolio-filters a {
     display: inline-block;
-    background: #000;
-    color: #fff !important;
-    padding: 8px 18px;
-    border-radius: 4px;
-    text-decoration: none;
-    font-family: 'Georgia', serif;
-    font-size: 1rem;
-    font-weight: normal;
-    transition: background 0.2s, color 0.2s;
-    border: none;
-    margin-bottom: 6px;
+    background: #000 !important;   /* Force black background */
+    color: #fff !important;        /* Force white text */
+    padding: 8px 18px !important;
+    border-radius: 4px !important;
+    text-decoration: none !important;
+    font-family: 'Georgia', serif !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+    border: none !important;
+    margin-bottom: 6px !important;
+    box-shadow: none !important;
 }
 
 #portfolio-filters a.active,
 #portfolio-filters a:hover {
-    background: #222;
+    background: #222 !important;
     color: #fff !important;
+}
+
+/* Remove any Bootstrap btn class on these links */
+#portfolio-filters a.btn,
+#portfolio-filters a[class*="btn"] {
+    background: #000 !important;
+    color: #fff !important;
+    border: none !important;
 }
