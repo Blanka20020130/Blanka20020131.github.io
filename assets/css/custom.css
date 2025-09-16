@@ -76,3 +76,10 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     color: #fff !important;
     border: none !important;
 }
+
+.navbar-nav .nav-link {
+    color: #000 !important;
+    font-family: 'Georgia', serif !important;
+    font-size: 1rem !important;
+    font-weight: normal !important;
+}
