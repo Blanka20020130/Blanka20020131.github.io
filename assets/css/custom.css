@@ -28,7 +28,7 @@ h1, h2, h3, p, li, a, .statement-text {
     margin: 0 auto 40px auto;
     max-width: 900px;
     text-align: center;
-    /* Border/background/padding removed */
+    /* Box removed: no border, background, padding, border-radius */
 }
 
 .statement-text {
@@ -36,4 +36,15 @@ h1, h2, h3, p, li, a, .statement-text {
     line-height: 1.4;
     font-family: 'Georgia', serif;
     margin: 0;
+}
+
+/* Portfolio filter buttons remain left-aligned by default */
+#portfolio-filters ul {
+    display: flex;
+    gap: 18px;
+    padding-left: 0;
+}
+
+#portfolio-filters li {
+    list-style: none;
 }
