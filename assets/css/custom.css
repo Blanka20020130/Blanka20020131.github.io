@@ -106,17 +106,19 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     background: transparent !important;
 }
 
-/* Main page huge buttons styles */
+/* Main page huge buttons styles - horizontal layout with images */
 .main-buttons {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 32px;
   margin: 40px 0;
   padding: 0;
+  justify-content: center;
 }
 .main-buttons li {
   list-style: none;
   width: 100%;
+  flex: 1 1 0;
 }
 .main-btn {
   display: flex;
@@ -137,6 +139,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   outline: none;
   position: relative;
   overflow: hidden;
+  height: 120px;
 }
 .main-btn .btn-label {
   background: rgba(0,0,0,0.45);
@@ -152,18 +155,23 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   z-index: 2;
 }
 .watercolor-btn {
-  background-image: url('../img/new_imgs/blankaaron.JPG');
+  background-image: url('../img/watercolor/alice in wonderland.jpg');
 }
 .oil-btn {
-  background-image: url('../img/new_imgs/IMG_2477.jpg');
+  background-image: url('../img/oil/ethereal death.jpg');
 }
 .sculpture-btn {
-  background-image: url('../img/sculptures/sculture\ 2\ intact.jpg');
+  background-image: url('../img/sculptures/mask 1.jpg');
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+  .main-buttons {
+    flex-direction: column;
+    gap: 24px;
+  }
   .main-btn {
     font-size: 1.3rem;
     min-height: 80px;
+    height: 80px;
   }
   .main-btn .btn-label {
     font-size: 1.1rem;
