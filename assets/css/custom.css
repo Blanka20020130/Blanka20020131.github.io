@@ -256,6 +256,31 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   min-height: 220px;
   position: relative;
 }
+
+  .slideshow-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    border: none;
+    font-size: 2.5rem;
+    width: 48px;
+    height: 64px;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  .slideshow-arrow#slideshow-prev {
+    left: 16px;
+  }
+  .slideshow-arrow#slideshow-next {
+    right: 16px;
+  }
+  .slideshow-arrow:hover, .slideshow-arrow:focus {
+    background: rgba(0,0,0,0.7);
+  }
 .logo-img-bottom {
   height: 220px;
   width: auto;

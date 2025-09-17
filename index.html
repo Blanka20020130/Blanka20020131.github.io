@@ -96,6 +96,10 @@
                 </div>
                 <!-- Slideshow section -->
                 <div class="main-slideshow" id="main-slideshow"></div>
+                                <div class="main-slideshow" id="main-slideshow">
+                                    <button id="slideshow-prev" class="slideshow-arrow" aria-label="Previous image">&#60;</button>
+                                    <button id="slideshow-next" class="slideshow-arrow" aria-label="Next image">&#62;</button>
+                                </div>
                 <!-- Portfolio grid remains unchanged -->
                 <div class="grid" data-cols="3" data-margin="0" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
                     <!-- portfolio entries ... -->
@@ -107,36 +111,37 @@
         <div class="logo-bottom-wrapper">
             <img src="assets/img/new_imgs/logo.png" alt="Logo Large" class="logo-img logo-img-bottom">
         </div>
-        <!-- footer unchanged -->
+        <div class="contact-info" style="width:100%;display:flex;flex-direction:column;align-items:center;margin-top:16px;">
+            <div style="font-size:1.3rem;margin-bottom:12px;">Contact me:</div>
+            <div style="display:flex;gap:24px;justify-content:center;">
+                <a href="#" id="contact-facebook" class="contact-btn" style="text-decoration:none;display:flex;align-items:center;gap:8px;padding:12px 24px;border-radius:8px;background:#4267B2;color:#fff;font-size:1.1rem;font-family:Georgia,serif;transition:background 0.2s;">
+                    <span style="font-size:1.6rem;">&#xf09a;</span> Facebook
+                </a>
+                <a href="#" id="contact-instagram" class="contact-btn" style="text-decoration:none;display:flex;align-items:center;gap:8px;padding:12px 24px;border-radius:8px;background:#E1306C;color:#fff;font-size:1.1rem;font-family:Georgia,serif;transition:background 0.2s;">
+                    <span style="font-size:1.6rem;">&#xf16d;</span> Instagram
+                </a>
+                <a href="#" id="contact-email" class="contact-btn" style="text-decoration:none;display:flex;align-items:center;gap:8px;padding:12px 24px;border-radius:8px;background:#333;color:#fff;font-size:1.1rem;font-family:Georgia,serif;transition:background 0.2s;">
+                    <span style="font-size:1.6rem;">&#xf0e0;</span> Email
+                </a>
+            </div>
+        </div>
     </footer>
     <script src="assets/js/main.min.js"></script>
         <script>
-                const slideshowImages = [
-                    'assets/img/new_imgs/blankaaron.JPG',
-                    'assets/img/new_imgs/citynew.jpg',
-                    'assets/img/new_imgs/nebula1.JPG',
-                    'assets/img/new_imgs/nebula2.JPG',
-                    'assets/img/new_imgs/passion.JPG',
-                    'assets/img/new_imgs/serenitynew.JPG',
-                    'assets/img/new_imgs/studznew.jpg',
-                    'assets/img/new_imgs/wave.JPG',
-                    'assets/img/new_imgs/dreams_new.JPG',
-                    'assets/img/new_imgs/falling_new.JPG',
-                    'assets/img/new_imgs/Image (2).JPG',
-                    'assets/img/new_imgs/Image (4).JPG',
-                    'assets/img/new_imgs/IMG_1030.JPG',
-                    'assets/img/new_imgs/IMG_1291.JPG',
-                    'assets/img/new_imgs/IMG_2832.JPG',
-                    'assets/img/new_imgs/IMG_3265.JPG',
-                    'assets/img/new_imgs/IMG_4185.jpg',
-                    'assets/img/new_imgs/IMG_4696.jpg',
-                    'assets/img/new_imgs/IMG_4791.jpg',
-                    'assets/img/new_imgs/IMG_8822.jpg',
+    const slideshowImages = [
+                      'assets/img/new_imgs/blankaaron.JPG',
+                      'assets/img/new_imgs/citynew.jpg',
+                      'assets/img/new_imgs/IMG_1030.JPG',
+                      'assets/img/new_imgs/IMG_2832.JPG',
+                      'assets/img/new_imgs/IMG_3265.JPG',
+                      'assets/img/new_imgs/serenitynew.JPG',
                 ];
                 let current = 0;
                 let prev = null;
                 // Render slideshow images after array is defined
                 const slideshowContainer = document.getElementById('main-slideshow');
+                const prevBtn = document.getElementById('slideshow-prev');
+                const nextBtn = document.getElementById('slideshow-next');
                 for (let i = 0; i < slideshowImages.length; i++) {
                     const img = document.createElement('img');
                     img.id = 'slideshow-img-' + i;
@@ -156,10 +161,20 @@
                         if (i === prevIdx) img.classList.add('prev');
                     }
                 }
+                // setInterval(() => {
                 setInterval(() => {
                     let next = (current + 1) % slideshowImages.length;
                     showSlide(next);
                 }, 3000);
+
+                prevBtn.addEventListener('click', function() {
+                    let prev = (current - 1 + slideshowImages.length) % slideshowImages.length;
+                    showSlide(prev);
+                });
+                nextBtn.addEventListener('click', function() {
+                    let next = (current + 1) % slideshowImages.length;
+                    showSlide(next);
+                });
         </script>
 </body>
 </html>
