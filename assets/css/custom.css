@@ -276,7 +276,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     left: 16px;
   }
   .slideshow-arrow#slideshow-next {
-  right: 48px;
+  right: 80px;
   }
   .slideshow-arrow:hover, .slideshow-arrow:focus {
     background: rgba(0,0,0,0.7);
