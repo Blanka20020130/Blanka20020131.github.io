@@ -149,7 +149,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   cursor: pointer;
 }
 .main-btn .btn-label {
-  background: rgba(0,0,0,0.45);
+  background: transparent;
   padding: 12px 32px;
   border-radius: 12px;
   font-family: 'Georgia', serif;
@@ -282,4 +282,23 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     height: 320px;
     width: 100vw;
   }
+}
+
+
+.ref-buttons {
+    position: relative;
+    margin: 32px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+}
+.ref-button-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 0;
+  box-shadow: none;
 }
