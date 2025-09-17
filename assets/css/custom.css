@@ -133,7 +133,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   justify-content: flex-start;
   gap: 32px;
   margin-left: 180px;
-  margin-top: 48px;
+  margin-top: 28px;
 }
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-item.active .nav-link {
