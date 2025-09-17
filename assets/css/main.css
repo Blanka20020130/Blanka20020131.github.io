@@ -85,7 +85,7 @@ body {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #FFFEDF;
+  color: #000;
   text-align: left;
   background-color: #2B2C31;
 }
@@ -3030,7 +3030,7 @@ textarea.form-control {
 .btn {
   display: inline-block;
   font-weight: 400;
-  color: #FFFEDF;
+  color: #000;
   text-align: center;
   vertical-align: middle;
   -webkit-user-select: none;
@@ -3059,7 +3059,7 @@ textarea.form-control {
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 .btn:hover {
-  color: #FFFEDF;
+  color: #000;
   text-decoration: none;
 }
 
@@ -12421,7 +12421,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 /* line 51, node_modules/bootstrap/scss/utilities/_text.scss */
 .text-body {
-  color: #FFFEDF !important;
+  color: #000 !important;
 }
 
 /* line 52, node_modules/bootstrap/scss/utilities/_text.scss */
@@ -12585,7 +12585,7 @@ html {
 /* line 12, src/assets/scss/base/_base.scss */
 body {
   font-family: 'Nunito Sans', sans-serif;
-  color: #FFFEDF;
+  color: #000;
   font-weight: 400;
   background: #131415;
 }
@@ -12594,7 +12594,7 @@ body {
 .form-control {
   background-color: #1c1e1f;
   border-color: #1d2021;
-  color: #FFFEDF;
+  color: #000;
 }
 
 /**
@@ -12686,7 +12686,7 @@ Responsive font styles
 h1, h2, h3, h4, h5, h6 {
   font-family: "Nunito Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 700;
-  color: #FFFEDF;
+  color: #000;
 }
 
 /* line 64, src/assets/scss/base/_typography.scss */
@@ -12718,7 +12718,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 4, src/assets/scss/layout/_nav.scss */
 .navbar-light .navbar-nav .nav-link {
   font-weight: 600;
-  color: #FFFEDF !important;
+  color: #000 !important;
 }
 
 /* line 8, src/assets/scss/layout/_nav.scss */
@@ -12744,7 +12744,7 @@ h1, h2, h3, h4, h5, h6 {
 footer {
   padding-top: 120px;
   padding-bottom: 100px;
-  color: #FFFEDF;
+  color: #000;
 }
 
 /* line 10, src/assets/scss/layout/_footer.scss */
@@ -12755,7 +12755,7 @@ footer a {
 /* line 14, src/assets/scss/layout/_footer.scss */
 .footer-link li a {
   text-decoration: underline;
-  color: #FFFEDF;
+  color: #000;
 }
 
 /* line 17, src/assets/scss/layout/_footer.scss */
@@ -12796,7 +12796,7 @@ footer a {
   padding-bottom: 10px;
   cursor: pointer;
   position: relative;
-  color: #FFFEDF;
+  color: #000;
 }
 
 /* line 38, src/assets/scss/pages/_theme.scss */
