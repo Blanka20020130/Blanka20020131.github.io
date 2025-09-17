@@ -198,14 +198,14 @@ sup {
 
 /* line 182, node_modules/bootstrap/scss/_reboot.scss */
 a {
-  color: #DFBA69;
+  color: #000;
   text-decoration: none;
   background-color: transparent;
 }
 
 /* line 13, node_modules/bootstrap/scss/mixins/_hover.scss */
 a:hover {
-  color: #cf9c2c;
+  color: #222;
   text-decoration: underline;
 }
 
