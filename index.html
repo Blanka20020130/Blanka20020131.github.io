@@ -80,6 +80,14 @@
             <!-- portfolio -->
             <div id="portfolio" class="container">
                 <!-- Slideshow section -->
+                <div class="main-slideshow">
+                    <!-- Dynamically render slideshow images -->
+                    <script>
+                        for (let i = 0; i < slideshowImages.length; i++) {
+                          document.write('<img id="slideshow-img-' + i + '" src="' + slideshowImages[i] + '" alt="Slideshow" class="slideshow-img' + (i === 0 ? ' active' : '') + '">');
+                        }
+                    </script>
+                </div>
 
                 <!-- trying the freaking buttons myself-->
                 <div class="ref-buttons">
@@ -95,15 +103,6 @@
                         <img src="assets/img/sculptures/mask 1.jpg" alt="Sculpture" class="ref-button-img">
                         <span class="ref-btn-label">Sculpture</span>
                     </a>
-                </div>
-
-                <div class="main-slideshow">
-                    <!-- Dynamically render slideshow images -->
-                    <script>
-                        for (let i = 0; i < slideshowImages.length; i++) {
-                          document.write('<img id="slideshow-img-' + i + '" src="' + slideshowImages[i] + '" alt="Slideshow" class="slideshow-img' + (i === 0 ? ' active' : '') + '">');
-                        }
-                    </script>
                 </div>
                 <!-- Portfolio grid remains unchanged -->
                 <div class="grid" data-cols="3" data-margin="0" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
@@ -141,7 +140,6 @@
           'assets/img/new_imgs/IMG_4696.jpg',
           'assets/img/new_imgs/IMG_4791.jpg',
           'assets/img/new_imgs/IMG_8822.jpg',
-          
         ];
         let current = 0;
         let prev = null;
