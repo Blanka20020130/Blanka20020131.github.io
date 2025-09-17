@@ -23,6 +23,20 @@
     <div class="nav-main">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li> -->
+                        <li class="nav-item"><a class="nav-link" href="watercolor.html">Watercolor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="oil.html">Oil</a></li>
+                        <li class="nav-item"><a class="nav-link" style="color:#000 !important; background:transparent !important;" href="sculpture.html">Sculpture</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- <div class="nav-main">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,7 +46,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li> 
-                        -->
+                        
                         <li class="nav-item">
                             <a class="nav-link" href="watercolor.html">Watercolour</a>
                         </li>
@@ -51,7 +65,7 @@
                 </div>
             </nav>
         </div>
-    </div>
+    </div> -->
     <main role="main">
         <section class="intro-custom">
             <h1 class="main-title">Sándor Blanka</h1>
@@ -86,11 +100,25 @@
                     </ul>
                 </div>
                 <!-- Slideshow section -->
+
+                <!-- trying the freaking buttons myself-->
+                 <div class="ref-buttons">
+                    <a href="watercolor.html">
+                        <img src="assets/img/new_imgs/blankaaron.JPG" alt="watercolor" class="ref-button-img">
+                    </a>
+                </div>
+
+
+
+
+
                 <div class="main-slideshow">
-                    <img id="slideshow-img-0" src="assets/img/new_imgs/blankaaron.JPG" alt="Slideshow" class="slideshow-img active">
-                    <img id="slideshow-img-1" src="assets/img/new_imgs/bogipepe.jpg" alt="Slideshow" class="slideshow-img">
-                    <img id="slideshow-img-2" src="assets/img/new_imgs/citynew.jpg" alt="Slideshow" class="slideshow-img">
-                    <!-- Add more images as needed -->
+                    <!-- Dynamically render slideshow images -->
+                    <script>
+                        for (let i = 0; i < slideshowImages.length; i++) {
+                          document.write('<img id="slideshow-img-' + i + '" src="' + slideshowImages[i] + '" alt="Slideshow" class="slideshow-img' + (i === 0 ? ' active' : '') + '">');
+                        }
+                    </script>
                 </div>
                 <!-- Portfolio grid remains unchanged -->
                 <div class="grid" data-cols="3" data-margin="0" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
@@ -109,8 +137,13 @@
     <script>
         const slideshowImages = [
           'assets/img/new_imgs/blankaaron.JPG',
-          'assets/img/new_imgs/bogipepe.jpg',
           'assets/img/new_imgs/citynew.jpg',
+          'assets/img/new_imgs/nebula1.JPG',
+          'assets/img/new_imgs/nebula2.JPG',
+          'assets/img/new_imgs/passion.JPG',
+          'assets/img/new_imgs/serenitynew.JPG',
+          'assets/img/new_imgs/studznew.jpg',
+          'assets/img/new_imgs/wave.JPG',
           'assets/img/new_imgs/dreams_new.JPG',
           'assets/img/new_imgs/falling_new.JPG',
           'assets/img/new_imgs/Image (2).JPG',
@@ -123,12 +156,7 @@
           'assets/img/new_imgs/IMG_4696.jpg',
           'assets/img/new_imgs/IMG_4791.jpg',
           'assets/img/new_imgs/IMG_8822.jpg',
-          'assets/img/new_imgs/nebula1.JPG',
-          'assets/img/new_imgs/nebula2.JPG',
-          'assets/img/new_imgs/passion.JPG',
-          'assets/img/new_imgs/serenitynew.JPG',
-          'assets/img/new_imgs/studznew.jpg',
-          'assets/img/new_imgs/wave.JPG'
+          
         ];
         let current = 0;
         let prev = null;
