@@ -78,11 +78,17 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     border: none !important;
 }
 
-.navbar-nav .nav-link {
-    color: #000 !important;
-    font-family: 'Georgia', serif !important;
-    font-size: 1rem !important;
-    font-weight: normal !important;
+.navbar-nav .nav-link,
+.navbar-nav .nav-link:visited,
+.navbar-nav .nav-link:active {
+  color: #000 !important;
+  background: transparent !important;
+  border: none !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #222 !important;
+  background: transparent !important;
 }
 
 .navbar-nav .nav-item {
@@ -131,8 +137,8 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   color: #fff !important;
   border-radius: 18px;
   text-decoration: none;
-  background-size: cover;
-  background-position: center;
+  background-size: cover !important;
+  background-position: center !important;
   box-shadow: 0 4px 24px rgba(0,0,0,0.10);
   transition: transform 0.18s cubic-bezier(.4,1.4,.6,1), box-shadow 0.18s;
   border: none;
@@ -140,6 +146,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   position: relative;
   overflow: hidden;
   height: 120px;
+  cursor: pointer;
 }
 .main-btn .btn-label {
   background: rgba(0,0,0,0.45);
@@ -155,13 +162,13 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   z-index: 2;
 }
 .watercolor-btn {
-  background-image: url('../img/watercolor/alice in wonderland.jpg');
+  background-image: url('../img/watercolor/alice in wonderland.jpg') !important;
 }
 .oil-btn {
-  background-image: url('../img/oil/ethereal death.jpg');
+  background-image: url('../img/oil/ethereal death.jpg') !important;
 }
 .sculpture-btn {
-  background-image: url('../img/sculptures/mask 1.jpg');
+  background-image: url('../img/sculptures/mask 1.jpg') !important;
 }
 @media (max-width: 900px) {
   .main-buttons {
