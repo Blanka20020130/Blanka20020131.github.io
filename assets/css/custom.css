@@ -286,24 +286,6 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
 
 
 .ref-buttons {
-    position: relative;
-    margin: 32px auto 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
-    height: auto;
-    width: 100%;
-    max-width: 200px;
-}
-.ref-button-img {
-  height: 200px;
-  width: 200px;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.main-ref-buttons {
   display: flex;
   flex-direction: row;
   gap: 32px;
@@ -350,7 +332,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   transition: filter 0.2s, transform 0.2s;
 }
 @media (max-width: 900px) {
-  .main-ref-buttons {
+  .ref-buttons {
     flex-direction: column;
     gap: 24px;
   }
