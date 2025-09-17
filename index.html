@@ -16,7 +16,9 @@
 <body>
     <!-- Logo top -->
     <div class="logo-top">
-        <img src="assets/img/new_imgs/logo.png" alt="Logo" class="logo-img logo-img-top">
+        <a href="index.html">
+            <img src="assets/img/new_imgs/logo.png" alt="Logo" class="logo-img logo-img-top">
+        </a>
     </div>
     <div class="nav-main">
         <div class="container">
@@ -83,7 +85,10 @@
                 </div>
                 <!-- Slideshow section -->
                 <div class="main-slideshow">
-                    <img id="slideshow-img" src="assets/img/new_imgs/blankaaron.JPG" alt="Slideshow" class="slideshow-img">
+                    <img id="slideshow-img-0" src="assets/img/new_imgs/blankaaron.JPG" alt="Slideshow" class="slideshow-img active">
+                    <img id="slideshow-img-1" src="assets/img/new_imgs/bogipepe.jpg" alt="Slideshow" class="slideshow-img">
+                    <img id="slideshow-img-2" src="assets/img/new_imgs/citynew.jpg" alt="Slideshow" class="slideshow-img">
+                    <!-- Add more images as needed -->
                 </div>
                 <!-- Portfolio grid remains unchanged -->
                 <div class="grid" data-cols="3" data-margin="0" data-height="1" data-masonry='{ "columnWidth": 200, "itemSelector": ".entry" }'>
@@ -100,38 +105,29 @@
     </footer>
     <script src="assets/js/main.min.js"></script>
     <script>
-        // Slideshow images (add more paths as desired)
         const slideshowImages = [
           'assets/img/new_imgs/blankaaron.JPG',
           'assets/img/new_imgs/bogipepe.jpg',
-          'assets/img/new_imgs/citynew.jpg',
-          'assets/img/new_imgs/dreams_new.JPG',
-          'assets/img/new_imgs/falling_new.JPG',
-          'assets/img/new_imgs/IMG_1030.JPG',
-          'assets/img/new_imgs/IMG_1291.JPG',
-          'assets/img/new_imgs/IMG_2832.JPG',
-          'assets/img/new_imgs/IMG_4185.jpg',
-          'assets/img/new_imgs/IMG_4696.jpg',
-          'assets/img/new_imgs/IMG_4791.jpg',
-          'assets/img/new_imgs/IMG_8822.jpg',
-          'assets/img/new_imgs/nebula1.JPG',
-          'assets/img/new_imgs/nebula2.JPG',
-          'assets/img/new_imgs/passion.JPG',
-          'assets/img/new_imgs/serenitynew.JPG',
-          'assets/img/new_imgs/studznew.jpg',
-          'assets/img/new_imgs/wave.JPG'
+          'assets/img/new_imgs/citynew.jpg'
+          // Add more image paths here
         ];
-        let slideshowIndex = 0;
-        const slideshowImg = document.getElementById('slideshow-img');
-        function showNextSlide() {
-          slideshowIndex = (slideshowIndex + 1) % slideshowImages.length;
-          slideshowImg.style.opacity = 0;
-          setTimeout(() => {
-            slideshowImg.src = slideshowImages[slideshowIndex];
-            slideshowImg.style.opacity = 1;
-          }, 500);
+        let current = 0;
+        let prev = null;
+        function showSlide(next) {
+          const total = slideshowImages.length;
+          const prevIdx = current;
+          current = next;
+          for (let i = 0; i < total; i++) {
+            const img = document.getElementById('slideshow-img-' + i);
+            img.classList.remove('active', 'prev');
+            if (i === current) img.classList.add('active');
+            if (i === prevIdx) img.classList.add('prev');
+          }
         }
-        setInterval(showNextSlide, 3000);
+        setInterval(() => {
+          let next = (current + 1) % slideshowImages.length;
+          showSlide(next);
+        }, 3000);
     </script>
 </body>
 </html>

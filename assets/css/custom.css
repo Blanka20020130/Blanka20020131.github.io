@@ -161,14 +161,17 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
   box-shadow: 0 8px 32px rgba(0,0,0,0.18);
   z-index: 2;
 }
-.watercolor-btn {
+.main-btn.watercolor-btn {
   background-image: url('../img/watercolor/alice in wonderland.jpg') !important;
+  background-color: transparent !important;
 }
-.oil-btn {
+.main-btn.oil-btn {
   background-image: url('../img/oil/ethereal death.jpg') !important;
+  background-color: transparent !important;
 }
-.sculpture-btn {
+.main-btn.sculpture-btn {
   background-image: url('../img/sculptures/mask 1.jpg') !important;
+  background-color: transparent !important;
 }
 @media (max-width: 900px) {
   .main-buttons {
@@ -199,8 +202,8 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
 .logo-img-top {
   height: 120px;
   width: auto;
-  border-radius: 18px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  border-radius: 0;
+  box-shadow: none;
 }
 @media (max-width: 768px) {
   .logo-top {
@@ -223,8 +226,8 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
 .logo-img-bottom {
   height: 220px;
   width: auto;
-  border-radius: 32px;
-  box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+  border-radius: 0;
+  box-shadow: none;
   margin-bottom: 24px;
 }
 @media (max-width: 768px) {
@@ -239,26 +242,42 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
 
 /* Main page slideshow styles */
 .main-slideshow {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100vw;
+  max-width: 100vw;
   margin: 40px 0 0 0;
-  min-height: 320px;
+  min-height: 480px;
+  overflow: hidden;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .slideshow-img {
-  max-width: 100%;
-  max-height: 320px;
-  border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 480px;
   object-fit: cover;
-  transition: opacity 0.5s;
+  transition: left 0.8s cubic-bezier(.4,1.4,.6,1);
+  border-radius: 0;
+  box-shadow: none;
+  opacity: 1;
+  z-index: 1;
 }
-@media (max-width: 768px) {
+.slideshow-img.active {
+  left: 0;
+  z-index: 2;
+}
+.slideshow-img.prev {
+  left: -100vw;
+  z-index: 1;
+}
+@media (max-width: 900px) {
   .main-slideshow {
-    min-height: 160px;
+    min-height: 220px;
   }
-  .slideshow-img {
-    max-height: 160px;
+  .slideshow-img, .slideshow-img.active, .slideshow-img.prev {
+    height: 220px;
+    width: 100vw;
   }
 }
