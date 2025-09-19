@@ -182,7 +182,7 @@
     z-index: 10;
   }
   .slideshow-arrow#slideshow-next {
-    right: 25px;
+    right: 5px;
     left: auto;
   }
   .slideshow-arrow#slideshow-prev {
@@ -481,10 +481,10 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     transition: background 0.2s;
   }
   .slideshow-arrow#slideshow-prev {
-    left: 16px;
+    left: 26px;
   }
   .slideshow-arrow#slideshow-next {
-    right: 36px;
+    right: 16px;
   }
   .slideshow-arrow:hover, .slideshow-arrow:focus {
     background: rgba(0,0,0,0.7);
