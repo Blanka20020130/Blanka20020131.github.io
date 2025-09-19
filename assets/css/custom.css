@@ -182,7 +182,7 @@
     z-index: 10;
   }
   .slideshow-arrow#slideshow-next {
-    right: 5px;
+    right: 10px;
     left: auto;
   }
   .slideshow-arrow#slideshow-prev {
