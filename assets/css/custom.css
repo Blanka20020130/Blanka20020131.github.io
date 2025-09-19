@@ -186,7 +186,7 @@
     left: auto;
   }
   .slideshow-arrow#slideshow-prev {
-    left: 0;
+    left: 25px;
     right: auto;
   }
   .logo-bottom-wrapper {
