@@ -136,7 +136,7 @@
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 100px);
   }
   .ref-btn {
     width: 100%;
@@ -182,7 +182,7 @@
     z-index: 10;
   }
   .slideshow-arrow#slideshow-next {
-    right: 0;
+    right: 5px;
     left: auto;
   }
   .slideshow-arrow#slideshow-prev {
@@ -484,7 +484,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     left: 16px;
   }
   .slideshow-arrow#slideshow-next {
-    right: 16px;
+    right: 21px;
   }
   .slideshow-arrow:hover, .slideshow-arrow:focus {
     background: rgba(0,0,0,0.7);
