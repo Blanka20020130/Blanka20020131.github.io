@@ -8,6 +8,7 @@
     margin-top: 16px !important;
     margin-bottom: 12px !important;
     text-align: center !important;
+    box-sizing: border-box !important;
   }
   .logo-img-top {
     height: 180px !important;
@@ -15,9 +16,17 @@
     max-width: 80vw !important;
     aspect-ratio: 1/1 !important;
     object-fit: contain !important;
-    margin: 0 auto !important;
+    margin-left: auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    box-sizing: border-box !important;
+    margin-right: auto !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
     display: block !important;
     text-align: center !important;
+    box-sizing: border-box !important;
   }
   .nav-main {
     width: 100vw !important;
@@ -28,17 +37,22 @@
     margin: 0 !important;
     padding: 0 !important;
   }
+    visibility: visible !important;
+    opacity: 1 !important;
   .nav-main .container {
     width: 100vw !important;
     display: flex !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
     flex-direction: column !important;
     align-items: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    right: 0 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    left: auto !important;
     gap: 0 !important;
-  }
-  .navbar {
-    width: 100vw !important;
+    left: 0 !important;
+    right: auto !important;
     background: transparent !important;
     padding: 0 !important;
     margin: 0 !important;
@@ -76,6 +90,7 @@
     border: none !important;
     box-sizing: border-box !important;
     background: none !important;
+    position: relative !important;
   }
   .ref-btn {
     width: 100vw !important;
@@ -84,6 +99,7 @@
     box-sizing: border-box !important;
     border: none !important;
     background: none !important;
+    position: relative !important;
   }
   .ref-button-img {
     height: 220px !important;
@@ -94,6 +110,7 @@
     border-radius: 0 !important;
     box-sizing: border-box !important;
     background: none !important;
+    position: relative !important;
   }
   .main-slideshow {
     min-height: 120px !important;
@@ -286,9 +303,10 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
 }
 
 .statement-section {
-    margin: 0 auto 40px auto;
-    max-width: 900px;
-    text-align: center;
+  margin: 0 auto 40px auto;
+  max-width: 900px;
+  text-align: center;
+  padding: 24px 16px;
 }
 
 
