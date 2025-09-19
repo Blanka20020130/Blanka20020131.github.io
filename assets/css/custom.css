@@ -1,74 +1,185 @@
 @media (max-width: 600px) {
-  .ref-btn {
-    border-radius: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  .ref-button-img {
-    border-radius: 0 !important;
-    margin-bottom: 0 !important;
-  }
-  .statement-section {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-  html, body {
+  .logo-top {
+    position: static !important;
     width: 100vw !important;
-    max-width: 100vw !important;
-    overflow-x: hidden !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 16px !important;
+    margin-bottom: 12px !important;
+    text-align: center !important;
+  }
+  .logo-img-top {
+    height: 180px !important;
+    width: 180px !important;
+    max-width: 80vw !important;
+    aspect-ratio: 1/1 !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+    display: block !important;
+    text-align: center !important;
+  }
+  .nav-main {
+    width: 100vw !important;
+    display: block !important;
+    background: #fff !important;
+    border-bottom: 1px solid #eee !important;
+    z-index: 10 !important;
     margin: 0 !important;
     padding: 0 !important;
   }
-  .logo-top {
-    position: static;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 12px;
-    margin-bottom: 8px;
-  }
-  .logo-img-top {
-    height: 140px;
-    width: auto;
-    max-width: 140px;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-    margin: 0 auto;
-    display: block;
-  }
   .nav-main .container {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0;
-    margin-top: 8px;
-    gap: 8px;
+    width: 100vw !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+  }
+  .navbar {
+    width: 100vw !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    display: block !important;
   }
   .navbar-nav {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    gap: 8px;
+    flex-direction: column !important;
+    width: 100vw !important;
+    align-items: center !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
   }
   .navbar-nav .nav-link {
     font-size: 1.1rem !important;
-    padding: 12px 0 !important;
-    width: 100%;
-    text-align: center;
+    padding: 16px 0 !important;
+    width: 100vw !important;
+    text-align: center !important;
+    color: #000 !important;
+    background: transparent !important;
+    border-bottom: 1px solid #eee !important;
+    margin: 0 !important;
+    display: block !important;
   }
   .ref-buttons {
-    flex-direction: column;
-    gap: 0;
+    flex-direction: column !important;
+    gap: 0 !important;
     margin: 0 !important;
     width: 100vw !important;
     align-items: stretch !important;
-    justify-content: flex-start;
+    justify-content: flex-start !important;
     padding: 0 !important;
+    border: none !important;
+    box-sizing: border-box !important;
+    background: none !important;
   }
   .ref-btn {
     width: 100vw !important;
     margin: 0 !important;
     padding: 0 !important;
-    box-sizing: border-box;
+    box-sizing: border-box !important;
+    border: none !important;
+    background: none !important;
+  }
+  .ref-button-img {
+    height: 220px !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    display: block !important;
+    border-radius: 0 !important;
+    box-sizing: border-box !important;
+    background: none !important;
+  }
+  .main-slideshow {
+    min-height: 120px !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin: 0 !important;
+  }
+  .slideshow-img, .slideshow-img.active, .slideshow-img.prev {
+    height: 120px !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    display: block !important;
+    object-fit: contain !important;
+  }
+  .slideshow-arrow {
+    width: 36px !important;
+    height: 48px !important;
+    font-size: 1.6rem !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    left: unset !important;
+    right: unset !important;
+    position: absolute !important;
+    z-index: 10001 !important;
+  }
+  .slideshow-arrow#slideshow-next {
+    right: 8px !important;
+    left: auto !important;
+  }
+  .slideshow-arrow#slideshow-prev {
+    left: 8px !important;
+    right: auto !important;
+    height: 140px;
+        width: 100vw !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+        border: none !important;
+        background: none !important;
+    margin: 0 auto;
+    display: block;
+        height: 220px !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        display: block !important;
+        border-radius: 0 !important;
+        box-sizing: border-box !important;
+        background: none !important;
+    gap: 8px;
+        min-height: 120px !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin: 0 !important;
+  }
+  .navbar-nav .nav-link {
+        height: 120px !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin: 0 !important;
+        display: block !important;
+        object-fit: contain !important;
+    width: 100%;
+    text-align: center;
+        width: 36px !important;
+        height: 48px !important;
+        font-size: 1.6rem !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        left: unset !important;
+        right: unset !important;
+        position: absolute !important;
+        z-index: 10001 !important;
+    justify-content: flex-start;
+    padding: 0 !important;
+          right: 8px !important;
+          left: auto !important;
+    width: 100vw !important;
+    margin: 0 !important;
+          left: 8px !important;
+          right: auto !important;
   }
   .ref-button-img {
     height: 220px;
