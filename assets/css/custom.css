@@ -78,7 +78,7 @@
 }
 
 /* Show mobile elements only on mobile */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .mobile-nav-buttons,
   .logo-nav-mobile-wrapper {
     display: flex;
