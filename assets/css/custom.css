@@ -52,7 +52,7 @@
 
 /* Hide mobile nav on desktop */
 @media (min-width: 601px) {
-  .mobile-nav-buttons {
+  .logo-nav-mobile-wrapper {
     display: none !important;
   }
 }
@@ -106,6 +106,9 @@
     align-items: stretch;
     justify-content: stretch;
     padding: 0;
+    box-sizing: border-box;
+    left: 0;
+    position: relative;
   }
   .ref-btn {
     width: 100vw;
@@ -113,6 +116,8 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    left: 0;
+    position: relative;
   }
   .ref-button-img {
     height: 220px;
