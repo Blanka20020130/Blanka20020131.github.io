@@ -446,7 +446,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
 /* Mobile Navigation - Styles */
 @media (max-width: 600px) {
   * {
-    margin: 0;
+    margin: -6px;
     padding: 0;
     box-sizing: border-box;
   }
@@ -583,7 +583,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     display: block;
   }
   .ref-button-img {
-    height: 33.33vh;
+    height: 26.33vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -605,7 +605,7 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     overflow: hidden;
   }
   .slideshow-img, .slideshow-img.active, .slideshow-img.prev {
-    height: 180px;
+    height: 205px;
     width: 100vw;
   }
   .slideshow-arrow {
@@ -618,11 +618,11 @@ h1, h2, h3, p, li, a, .statement-text, .main-title, .subtitle {
     z-index: 10;
   }
   .slideshow-arrow#slideshow-next {
-    right: 0px;
+    right: 20px;
     left: auto;
   }
   .slideshow-arrow#slideshow-prev {
-    left: 0px;
+    left: 10px;
     right: auto;
   }
   .logo-bottom-wrapper {
