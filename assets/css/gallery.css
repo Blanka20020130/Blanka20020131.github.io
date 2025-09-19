@@ -33,10 +33,11 @@
         max-width: 100vw !important;
         height: auto !important;
         margin: 0 !important;
-        border-radius: 7px !important;
+        border: none !important;
+        border-radius: 0 !important;
         aspect-ratio: unset !important;
         object-fit: contain !important;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        box-shadow: none !important;
     }
 
 .gallery-grid {
@@ -52,8 +53,9 @@
     aspect-ratio: 4/3; /* Modern browsers */
     object-fit: cover;
     cursor: pointer;
-    border-radius: 7px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     transition: transform 0.2s;
     max-width: 100%;
     height: auto;
@@ -64,8 +66,9 @@
     max-height: 80vh;
     width: auto;
     height: auto;
-    border-radius: 12px;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.7);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
     object-fit: contain;
     background: #fff;
     position: relative;
